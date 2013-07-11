@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE824A26-8BC5-4707-BC23-7EFEB16BC803}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SegmentRegistration</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4273;4005;4819;4099;4244;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(DROPBOX)\Programs\opensource\ARPACK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(DROPBOX)\Programs\opensource\ARPACK\lib\arpack_win32.lib;$(DROPBOX)\Programs\opensource\ARPACK\SuperLU_4.3\lib\superLU.lib;$(DROPBOX)\Programs\opensource\ARPACK\SuperLU_4.3\lib\cblas.lib;ceres.lib;CXSparse.lib;levmar.lib;lapack.lib;blas.lib;libf2c.lib;nlopt.lib;opencv_calib3d243.lib;opencv_contrib243.lib;opencv_core243.lib;opencv_features2d243.lib;opencv_flann243.lib;opencv_gpu243.lib;opencv_highgui243.lib;opencv_imgproc243.lib;opencv_legacy243.lib;opencv_ml243.lib;opencv_nonfree243.lib;opencv_objdetect243.lib;opencv_photo243.lib;opencv_stitching243.lib;opencv_ts243.lib;opencv_video243.lib;opencv_videostab243.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AffineLineRegistration.cpp" />
+    <ClCompile Include="alglib\alglibinternal.cpp" />
+    <ClCompile Include="alglib\alglibmisc.cpp" />
+    <ClCompile Include="alglib\ap.cpp" />
+    <ClCompile Include="alglib\dataanalysis.cpp" />
+    <ClCompile Include="alglib\diffequations.cpp" />
+    <ClCompile Include="alglib\fasttransforms.cpp" />
+    <ClCompile Include="alglib\integration.cpp" />
+    <ClCompile Include="alglib\interpolation.cpp" />
+    <ClCompile Include="alglib\linalg.cpp" />
+    <ClCompile Include="alglib\optimization.cpp" />
+    <ClCompile Include="alglib\solvers.cpp" />
+    <ClCompile Include="alglib\specialfunctions.cpp" />
+    <ClCompile Include="alglib\statistics.cpp" />
+    <ClCompile Include="draw.cpp" />
+    <ClCompile Include="ecmlr.cpp" />
+    <ClCompile Include="ecmlrAffine.cpp" />
+    <ClCompile Include="ecmlrPerspective.cpp" />
+    <ClCompile Include="func.cpp" />
+    <ClCompile Include="lbd\EDLineDetector.cpp" />
+    <ClCompile Include="lbd\LineDescriptor.cpp" />
+    <ClCompile Include="LineExtract.cpp" />
+    <ClCompile Include="lineFeature.cpp" />
+    <ClCompile Include="LineMatchFLANN.cpp" />
+    <ClCompile Include="lp\lp.cpp" />
+    <ClCompile Include="lsd.c" />
+    <ClCompile Include="LSWMS.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SpectralMatching.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AffineLineRegistration.h" />
+    <ClInclude Include="alglib\alglibinternal.h" />
+    <ClInclude Include="alglib\alglibmisc.h" />
+    <ClInclude Include="alglib\ap.h" />
+    <ClInclude Include="alglib\dataanalysis.h" />
+    <ClInclude Include="alglib\diffequations.h" />
+    <ClInclude Include="alglib\fasttransforms.h" />
+    <ClInclude Include="alglib\integration.h" />
+    <ClInclude Include="alglib\interpolation.h" />
+    <ClInclude Include="alglib\linalg.h" />
+    <ClInclude Include="alglib\optimization.h" />
+    <ClInclude Include="alglib\solvers.h" />
+    <ClInclude Include="alglib\specialfunctions.h" />
+    <ClInclude Include="alglib\statistics.h" />
+    <ClInclude Include="alglib\stdafx.h" />
+    <ClInclude Include="draw.h" />
+    <ClInclude Include="ecmlr.h" />
+    <ClInclude Include="ecmlrAffine.h" />
+    <ClInclude Include="ecmlrPerspective.h" />
+    <ClInclude Include="func.h" />
+    <ClInclude Include="lineConstant.h" />
+    <ClInclude Include="LineExtract.h" />
+    <ClInclude Include="lineFeature.h" />
+    <ClInclude Include="LineMatchFLANN.h" />
+    <ClInclude Include="lp\LineMatcher.h" />
+    <ClInclude Include="lp\lp.h" />
+    <ClInclude Include="lsd.h" />
+    <ClInclude Include="LSWMS.h" />
+    <ClInclude Include="SpectralMatching.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lbd\EDLineDetector.hh" />
+    <None Include="lbd\LineDescriptor.hh" />
+    <None Include="lbd\LineStructure.hh" />
+    <None Include="lbd\PairwiseLineMatching.hh" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

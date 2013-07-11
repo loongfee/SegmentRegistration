@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="lbd">
+      <UniqueIdentifier>{9559c237-f332-4bd4-8855-3f37fd7f3572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lp">
+      <UniqueIdentifier>{5d4dd502-3dcb-4c3f-b959-6da58e182285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="alglib">
+      <UniqueIdentifier>{4d6d5432-1340-46e8-8da3-0838d8b253f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ecmlr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ecmlrAffine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="func.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LineExtract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LineMatchFLANN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lineFeature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lbd\EDLineDetector.cpp">
+      <Filter>lbd</Filter>
+    </ClCompile>
+    <ClCompile Include="lbd\LineDescriptor.cpp">
+      <Filter>lbd</Filter>
+    </ClCompile>
+    <ClCompile Include="lp\lp.cpp">
+      <Filter>lp</Filter>
+    </ClCompile>
+    <ClCompile Include="ecmlrPerspective.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\alglibinternal.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\alglibmisc.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\ap.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\dataanalysis.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\diffequations.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\fasttransforms.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\integration.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\interpolation.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\linalg.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\optimization.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\solvers.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\specialfunctions.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="alglib\statistics.cpp">
+      <Filter>alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="SpectralMatching.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AffineLineRegistration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LSWMS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ecmlr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ecmlrAffine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lineConstant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LineExtract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LineMatchFLANN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lineFeature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lp\LineMatcher.h">
+      <Filter>lp</Filter>
+    </ClInclude>
+    <ClInclude Include="lp\lp.h">
+      <Filter>lp</Filter>
+    </ClInclude>
+    <ClInclude Include="ecmlrPerspective.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\alglibinternal.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\alglibmisc.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\ap.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\dataanalysis.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\diffequations.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\fasttransforms.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\integration.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\interpolation.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\linalg.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\optimization.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\solvers.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\specialfunctions.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\statistics.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="alglib\stdafx.h">
+      <Filter>alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="SpectralMatching.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AffineLineRegistration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LSWMS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lbd\PairwiseLineMatching.hh">
+      <Filter>lbd</Filter>
+    </None>
+    <None Include="lbd\EDLineDetector.hh">
+      <Filter>lbd</Filter>
+    </None>
+    <None Include="lbd\LineDescriptor.hh">
+      <Filter>lbd</Filter>
+    </None>
+    <None Include="lbd\LineStructure.hh">
+      <Filter>lbd</Filter>
+    </None>
+  </ItemGroup>
+</Project>
